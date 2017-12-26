@@ -4070,6 +4070,9 @@
 }
 #four{
 	background: #4cbec7;
+	-webkit-box-shadow: inset 0px 7px 13px 0px rgba(0,0,0,0.46);
+	-moz-box-shadow: inset 0px 7px 13px 0px rgba(0,0,0,0.46);
+	box-shadow: inset 0px 7px 13px 0px rgba(0,0,0,0.46);
 }
 #three-jj{
 	-webkit-box-shadow: 0px 7px 13px 0px rgba(0,0,0,0.46);
