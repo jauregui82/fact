@@ -3400,10 +3400,10 @@
 			#banner .content .image {
 				border-radius: 100%;
 				display: inline-block;
-				height: 28em;
+				height: 26em;
 				margin-left: 3em;
 				vertical-align: middle;
-				width: 28em;
+				width: 26em;
 			}
 
 				#banner .content .image img {
@@ -3445,7 +3445,7 @@
 		#footer .copyright {
 			color: rgba(255, 255, 255, 0.5);
 			font-size: 0.8em;
-			line-height: 1em;
+			line-height: 1.5em;
 			margin: 2em 0 0 0;
 			padding: 0;
 			text-align: center;
@@ -3744,8 +3744,11 @@
 					}
 
 					#banner .content .image {
-						height: 9em;
-						width: 9em;
+						/*jauregui*/
+						/*height: 9em;
+						width: 9em;*/
+						height: 15em;
+						width: 15em;
 					}
 
 		/* Off-Canvas Navigation */
