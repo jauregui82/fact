@@ -133,7 +133,7 @@
 				<section id="1two" class="">
 					<div style="background-color: #fff;" class="row">
 						<div align="center" class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
-							<img class="imgSec" style="width: 90%" src="images/flyer2.png" alt="">
+							<img id="flyer2" class="imgSec" style="width: 90%" src="images/flyer2.png" alt="">
 						</div>
   						<div align="right" style="padding-right: 0px; padding-left: 0;" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
   							<div id="cuerpo2" class="jj-right" style="background-color: #47a0e2">
@@ -182,7 +182,7 @@
   							</div>
   						</div>
 						<div align="center" class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
-							<img class="imgSec" style="width: 90%" src="images/flujo.png" alt="">
+							<img id="flujo" class="imgSec" style="width: 90%" src="images/flujo.png" alt="">
 						</div>
 						<div class="jj-left-sm col-xs-12 col-sm-12" style="background-color: #47a0e2">
 							<header style="background-color: #337ab77d; border-radius: 7px;">
@@ -281,15 +281,15 @@
 				var two_alto = $("#1two").height();
 
 				var two_ancho_three = $("#three-jj").width();
-				var two_alto_three = $("#three-jj").height();
+				var two_alto_three = $("#flujo").height();
 
 				var two_img_alto = $(".imgSec").height();
 
 				var two_ancho_px = two_ancho +"px";
 				var two_alto_px = two_alto +"px";
 
-				var two_ancho_px_three = two_ancho_three  +"px";
-				var two_alto_px_three = two_alto_three +"px";
+				var two_ancho_px_three = two_ancho_three +"px";
+				var two_alto_px_three = two_alto_three +50+"px";
 
 					$(".jj-right").css('height', two_alto_px);
 					$(".jj-left").css('height', two_alto_px_three);
