@@ -15,11 +15,11 @@
         <meta property="fb:admins" content="870098016431404">
         <meta property="og:description" content="El futuro de tu empresa esta en tus manos! - Facturar nunca fue tan fácil.">
         <!-- Chrome, Firefox OS, Opera and Vivaldi -->
-		<meta name="theme-color" content="#4cbec7">
+		<meta name="theme-color" content="#fff">
 		<!-- iOS Safari -->
-		<meta name="apple-mobile-web-app-status-bar-style" content="#4cbec7">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#fff">
 		<!-- Windows Phone -->
-		<meta name="msapplication-navbutton-color" content="#4cbec7">
+		<meta name="msapplication-navbutton-color" content="#fff">
 
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css"/>
@@ -49,6 +49,48 @@
 		  gtag('config', 'UA-111699159-1');
 		</script>
 
+		<script>
+			$(document).ready(function($){
+				/*Ancho seccion 1two*/
+				var two_ancho = $("#1two").width();
+				var two_alto = $("#1two").height();
+
+				var two_ancho_three = $("#three-jj").width();
+				var two_alto_three = $("#flujo").height();
+
+				var two_img_alto = $(".imgSec").height();
+
+				var two_ancho_px = two_ancho +"px";
+				var two_alto_px = two_alto +"px";
+
+				var two_ancho_px_three = two_ancho_three +"px";
+				var two_alto_px_three = two_alto_three +50+"px";
+
+					$(".jj-right").css('height', two_alto_px);
+					$(".jj-left").css('height', two_alto_px_three);
+				
+				if (two_ancho >= 980) {
+						$(window).scroll(function(){
+					    window_y = $(window).scrollTop(); // VALOR QUE SE HA MOVIDO DEL SCROLL
+					    scroll_critical_two = parseInt($("#1two").height()); // VALOR DE TU DIV
+					    if (window_y > scroll_critical_two) { // SI EL SCROLL HA SUPERADO EL ALTO DE TU DIV
+					       $('#cuerpo2').show('slide');
+					    } else if (two_ancho < 980) {
+					    	 $('#cuerpo2').hide();
+					    }
+					// });
+					// $(window).scroll(function(){
+					    window_y = $(window).scrollTop(); // VALOR QUE SE HA MOVIDO DEL SCROLL
+					    scroll_critical_three = parseInt($("#four").height()); // VALOR DE TU DIV
+					    if (window_y > scroll_critical_three) { // SI EL SCROLL HA SUPERADO EL ALTO DE TU DIV
+					       $('#cuerpo3').show('fade');
+					    } else if (two_ancho < 980) {
+					    	 $('#cuerpo3').hide();
+					    }
+					});
+				}
+			}); 
+		</script>
 	</head>
 	<body class="landing">
 		<div id="page-wrapper">
@@ -59,25 +101,7 @@
 					<nav id="nav">
 						<ul>
 							<li><a href="index.html">Inicio</a></li>
-							<!-- <li>
-								<a href="#">Layouts</a>
-								<ul>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li><a href="no-sidebar.html">No Sidebar</a></li>
-									<li>
-										<a href="#">Submenu</a>
-										<ul>
-											<li><a href="#">Option 1</a></li>
-											<li><a href="#">Option 2</a></li>
-											<li><a href="#">Option 3</a></li>
-											<li><a href="#">Option 4</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li> -->
 							<li><a target="_blank" href="https://goo.gl/9qs6QJ">Contáctanos</a></li>
-							<!-- <li><a href="#" class="button special">Sign Up</a></li> -->
 						</ul>
 					</nav>
 				</header>
@@ -91,7 +115,6 @@
 							Facturar nunca fue tan fácil.</p>
 						</header>
 						<span class="image"><img src="images/pc1.jpg" alt="" /></span>
-						<!-- <span class="image"><img src="images/flujo.png" alt="" height="100%" /></span> -->
 					</div>
 					<a href="#one" class="goto-next scrolly"></a>
 				</section>
@@ -277,48 +300,6 @@
 				</footer>
 
 		</div>
-		<script>
-			$(document).ready(function($){
-				/*Ancho seccion 1two*/
-				var two_ancho = $("#1two").width();
-				var two_alto = $("#1two").height();
-
-				var two_ancho_three = $("#three-jj").width();
-				var two_alto_three = $("#flujo").height();
-
-				var two_img_alto = $(".imgSec").height();
-
-				var two_ancho_px = two_ancho +"px";
-				var two_alto_px = two_alto +"px";
-
-				var two_ancho_px_three = two_ancho_three +"px";
-				var two_alto_px_three = two_alto_three +50+"px";
-
-					$(".jj-right").css('height', two_alto_px);
-					$(".jj-left").css('height', two_alto_px_three);
-				
-    			if (two_ancho >= 980) {
-	   				$(window).scroll(function(){
-					    window_y = $(window).scrollTop(); // VALOR QUE SE HA MOVIDO DEL SCROLL
-					    scroll_critical_two = parseInt($("#1two").height()); // VALOR DE TU DIV
-					    if (window_y > scroll_critical_two) { // SI EL SCROLL HA SUPERADO EL ALTO DE TU DIV
-					       $('#cuerpo2').show('slide');
-					    } else if (two_ancho < 980) {
-					    	 $('#cuerpo2').hide();
-					    }
-					// });
-					// $(window).scroll(function(){
-					    window_y = $(window).scrollTop(); // VALOR QUE SE HA MOVIDO DEL SCROLL
-					    scroll_critical_three = parseInt($("#four").height()); // VALOR DE TU DIV
-					    if (window_y > scroll_critical_three) { // SI EL SCROLL HA SUPERADO EL ALTO DE TU DIV
-					       $('#cuerpo3').show('fade');
-					    } else if (two_ancho < 980) {
-					    	 $('#cuerpo3').hide();
-					    }
-					});
-				}
-			}); 
-		</script>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
